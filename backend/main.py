@@ -1,2 +1,4 @@
 def main(input_data):
-	retun input_data[0]+input_data[1]
+	stdin = input_data['stdin']
+	a, b = map(int, stdin.split())
+	return {'stdout': str(a + b)}
