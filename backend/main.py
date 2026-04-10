@@ -1,2 +1,6 @@
 def main(input_data):
-	retun input_data[0]+input_data[1]
+	stdin = input_data.get('stdin', '')
+
+	numbers = list(map(int, stdin.split()))
+	result = sum(numbers)
+	return {'stdout': str(result)}
